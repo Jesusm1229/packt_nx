@@ -7,17 +7,22 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-
 import { RouterModule } from '@angular/router';
+import { PoiModule } from '@packt/poi';
+import { PoiListComponent } from './poi-list/poi-list.component';
+import { GoogleMapsModule } from '@angular/google-maps';
+import { MapComponent } from './map/map.component';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   imports: [CommonModule, LayoutModule, MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule,
     RouterModule.forChild([
       { path: '', component: VisitorComponent }
-      ])],
-  declarations: [VisitorComponent],
+    ]),
+    PoiModule,
+    GoogleMapsModule,
+    MatCardModule
+  ],
+  declarations: [VisitorComponent, PoiListComponent, MapComponent],
 })
 export class VisitorModule {}
-
-/*The route configuration will activate VisitorComponent by default as soon as
-VisitorModule is loaded using the tour path */
