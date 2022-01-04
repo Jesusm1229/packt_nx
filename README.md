@@ -1,5 +1,21 @@
 
+Aplicación empresarial enfocada en visitar Puntos de Interés geográficamos mostrando estadísticas de visitantes según la región. 
 
+El sistema fue desarrollado en Nx Dev Tools, creando una app Nx monorepo. El sistema cuenta con dos portales, uno destinado a los visitantes y otro a los administradores. 
+
+
+![image](https://user-images.githubusercontent.com/48733708/148081349-b22bd756-440d-45d2-bbfa-f070df8b40cb.png)
+<p style="text-align: center;">Fig. 1 Selección del PDI</p>
+
+Se hizo uso de la librería NgRx para el mantenimiento del portal de visitantes y manipular el estado de la aplicación. 
+
+![image](https://user-images.githubusercontent.com/48733708/148081757-80c9e655-3223-4736-a16f-609fc7380dc1.png)
+<p style="text-align: center;">Fig. 2 Ventana de información</p>
+
+El portal de los administradores cuenta con una libreía Chart para mostrar las estadísticas de cada PDI.
+
+![image](https://user-images.githubusercontent.com/48733708/148082823-e0fd9165-3063-4e27-b40d-833975256ee5.png)
+<p style="text-align: center;">Fig. 3 Estadísticas PDI</p>
 # Packt
 
 This project was generated using [Nx](https://nx.dev).
